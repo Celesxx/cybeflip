@@ -1,0 +1,86 @@
+body 
+{ 
+    margin: 0;
+    font-family: 'Loos Extended' !important;
+    font-style: normal; 
+}
+
+#root
+{
+  height: 100vh;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.home 
+{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(137deg, rgba(13,23,50,1) 50%, rgba(3,9,23,1) 100%);
+  overflow: hidden;
+}
+.f { display: flex;}
+.f-row { flex-direction: row; }
+.f-reverse-row { flex-direction: row-reverse;}
+.f-column { flex-direction: column; }
+.f-reverse-column { flex-direction: column-reverse; }
+.f-justify-around { justify-content: space-around;}
+.f-justify-between { justify-content: space-between;}
+.f-justify-start { justify-content: flex-start;}
+.f-justify-end { justify-content: flex-end;}
+.f-justify-center { justify-content: center;}
+.f-content-start {align-content: flex-start;}
+.f-content-end {align-content: flex-end;}
+.f-content-center {align-content: center;}
+.f-align-start {align-items: flex-start;}
+.f-align-end {align-items: flex-end;}
+.f-align-center {align-items: center;}
+ul { margin: 0; padding: 0; }
+a { color: blue; text-decoration: none; }
+ul { list-style-type: none; }
+.backspace { margin-left: -4px; }
+h1, h2, h3, h4, h5, p, input
+{
+    all: unset; 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Loos Extended';
+}
+
+
+.button
+{
+    --glow-color: rgba(232,82,235,1);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgba(103, 54, 149,0.5);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.button:hover 
+{
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+   
+.button:active 
+{
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
