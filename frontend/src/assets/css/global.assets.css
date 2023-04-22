@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, p, input
     --glow-color: rgba(232,82,235,1);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
     --enhanced-glow-color: rgb(231, 206, 255);
-    --btn-color: rgba(103, 54, 149,0.5);
+    --btn-color: rgba(103, 54, 149,0.2);
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
     color: var(--glow-color);
@@ -83,4 +83,26 @@ h1, h2, h3, h4, h5, p, input
     box-shadow: 0 0 0.6em .25em var(--glow-color),
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+
+
+.input
+{
+    --glow-color: rgba(232,82,235,1);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgba(103, 54, 149,0.2);
+    border: .25em solid var(--glow-color);
+    color: var(--glow-color);
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+        box-shadow: 0 0 1em .1em var(--glow-color),
+        0 0 0em 0em var(--glow-spread-color),
+        inset 0 0 .75em .125em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
 }

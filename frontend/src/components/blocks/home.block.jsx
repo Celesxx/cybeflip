@@ -66,8 +66,8 @@ class Home extends React.Component
                 </div>
 
                 <div className='card-content f f-column f-justify-center f-align-center'>
-                    <input className='card-input' type='text' name='amount' id='amount' onFocus={this.handleKeyboardResize} onKeyPress={this.checkNumber} onChange={this.handleChange} placeholder="Insert amount here"></input>
-                    <input className='card-input' type='text' name='creator' id='creator' onFocus={this.handleKeyboardResize} onKeyPress={this.checkNumber} onChange={this.handleChange} placeholder="Insert creator code here"></input>
+                    <input className='card-input input' type='text' name='amount' id='amount' onFocus={this.handleKeyboardResize} onKeyPress={this.checkNumber} onChange={this.handleChange} placeholder="Insert amount here"></input>
+                    <input className='card-input input' type='text' name='creator' id='creator' onFocus={this.handleKeyboardResize} onKeyPress={this.checkNumber} onChange={this.handleChange} placeholder="Insert creator code here"></input>
                     <div className='card-balance-core f f-row f-justify-center f-align-center'>
                         <p className='card-balance'>Balance : </p>
                         <p className='card-balance'>{this.state.balance}</p>
@@ -85,7 +85,7 @@ class Home extends React.Component
 
 
             <div className='home-line-1 f f-row f-justify-start f-align-center'>
-                <div className='line-1' />
+                <div className='line-1 glow' />
                 <div className='circle-1' />
             </div>
 

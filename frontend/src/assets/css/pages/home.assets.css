@@ -67,15 +67,19 @@
 {
     width: 80%;
     height: 40px;
-    border: 4px solid rgba(232,82,235,1);
+    /* border: 4px solid rgba(232,82,235,1);
     border-radius: 89px;
     background: transparent;
     text-transform: uppercase;
-    box-shadow: 1px 1px 6px 2px rgba(232, 82, 235, 0.62);
+    box-shadow: 1px 1px 6px 2px rgba(232, 82, 235, 0.62); */
 }
-.card-input, .card-balance, .card-gain, .card-input::placeholder
+.card-input::placeholder { color: rgba(232,82,235,1); }
+.card-input, .card-balance, .card-gain
 {
-    color: rgba(232,82,235,1);
+    --glow-color: rgba(232,82,235,1);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    color: var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -100,7 +104,7 @@
 .card-button-core
 {
     width: 80%;
-    height: 40px;
+    height: 60px;
 }
 
 .card-button
@@ -109,6 +113,10 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
+    padding: 0.5em 2em;
+    box-shadow: 0 0 1em .1em var(--glow-color),
+        0 0 0em 0em var(--glow-spread-color),
+        inset 0 0 .75em .125em var(--glow-color);
     /* border: 6px;
     border-color: unset;
     border-left: 6px solid rgba(232,82,235,1);
@@ -143,9 +151,13 @@
 .line-40, .line-41, .line-42, .line-43, .line-44, .line-45,
 .line-46
 {
+    --glow-color: rgba(232,82,235,1);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
     height: 4px;
-    background: rgba(232, 82, 235, 1);
-    box-shadow: 0.25px 0.25px 6px 2px rgba(232, 82, 235, 0.62);
+    background: var(--glow-color);
+        box-shadow: 0 0 1em .1em var(--glow-color),
+        0 0 0em 0em var(--glow-spread-color),
+        inset 0 0 .75em .125em var(--glow-color) !important;
 }
 
 .line-2, .line-3, .line-4, .line-5, .line-6, .line-7, .line-8, .line-9,
@@ -155,11 +167,16 @@
 .line-38, .line-36, .line-47, .line-48, .line-49, .line-50,
 .line-51, .line-52, .line-53, .line-54
 {
+    --glow-color: rgba(232,82,235,1);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
     height: 4px;
     filter: blur(5px);
-    background: rgba(232, 82, 235, 0.8);
     filter: brightness(0.6) blur(1px);
-    box-shadow: 0.25px 0.25px 6px 2px rgba(232, 82, 235, 0.62);
+    height: 4px;
+    background: var(--glow-color);
+        box-shadow: 0 0 1em .1em var(--glow-color),
+        0 0 0em 0em var(--glow-spread-color),
+        inset 0 0 .75em .125em var(--glow-color) !important;
 }
 
 .circle-1, .circle-6, .circle-7, .circle-8, .circle-9,
